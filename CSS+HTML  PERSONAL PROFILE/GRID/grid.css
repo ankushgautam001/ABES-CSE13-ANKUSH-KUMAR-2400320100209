@@ -1,0 +1,19 @@
+body{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 5em 100px 30%;
+    width: 800px;
+    gap: 10px;
+    border: 2px solid #000;
+}
+.grid div{
+    background: #2564ed;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 6px;
+}

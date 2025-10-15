@@ -1,0 +1,27 @@
+body{
+    margin: 0; 
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, 
+    Geneva, Verdana, sans-serif;
+    background: #e0e7ff;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav    main"
+    "nav    aside"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px 1fr 1fr 60px;
+  height: 100vh;
+  gap: 10px;
+  padding: 10px;
+  background: #f1f5f9;
+}
+
+/* Assigning each section */
+header { grid-area: header; background: #79ca73; color: white; text-align: center; }
+nav    { grid-area: nav; background: #273104; color: white; padding: 10px; }
+main   { grid-area: main; background: #e76b91; padding: 10px;}
+aside  { grid-area: aside; background: #15a086; padding: 10px; }
+footer { grid-area: footer; background: #111827; color: white; text-align: center; line-height: 60px; }

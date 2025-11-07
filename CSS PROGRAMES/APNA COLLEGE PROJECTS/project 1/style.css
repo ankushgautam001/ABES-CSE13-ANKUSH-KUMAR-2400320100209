@@ -1,0 +1,20 @@
+*{
+    color: blue;
+}
+
+h1{
+    color: green;
+}
+button{
+    color: brown;
+}
+
+#HeadinOne{
+    color: chartreuse;
+}
+#HeadingTwo{
+    color: brown;
+}
+.myclass{
+    color: magenta;
+}

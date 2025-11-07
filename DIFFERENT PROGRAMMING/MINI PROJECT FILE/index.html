@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Web Application</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <main class="container">
+    <h1>Weather Web Application</h1>
+    <form id="searchForm" class="search-form" autocomplete="off">
+      <input id="cityInput" type="text" placeholder="Enter city (e.g. Mumbai)" required />
+      <button id="searchBtn" type="submit">Search</button>
+      <button id="geoBtn" type="button" title="Use current location">📍</button>
+    </form>
+
+    <div id="status" class="status hidden"></div>
+
+    <section id="weatherCard" class="card hidden" aria-live="polite">
+      <div class="top">
+        <div>
+          <h2 id="cityName">—</h2>
+          <p id="desc">—</p>
+        </div>
+        <img id="icon" alt="" src="" />
+      </div>
+
+      <div class="details">
+        <div><strong>Temp:</strong> <span id="temp">—</span></div>
+        <div><strong>Feels:</strong> <span id="feels">—</span></div>
+        <div><strong>Humidity:</strong> <span id="hum">—</span></div>
+        <div><strong>Wind:</strong> <span id="wind">—</span></div>
+      </div>
+    </section>
+
+    <footer class="note">Powered by OpenWeatherMap</footer>
+  </main>
+
+</body>
+</html>

@@ -1,32 +1,31 @@
 body{
-    font-family: 'Trebuchet MS',
-    'Lucida Sans Unicode',
-    'Lucida Grande',
-    'Lucida Sans';
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    margin: 0;
+    background: lightgray
+}
 header{
     background: black;
     color: white;
     padding: 20px;
     text-align: center;
-       }
+}
 .products{
     display: grid;
-    grid-template-columns: repeat
-    (auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
-       }
+}
 .card{
     background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0,0.5);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
     text-align: center;
     transition: transform 0.2s;
 }
 .card:hover{
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0,0.5);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 .card img{
     width: 100%;
@@ -45,7 +44,6 @@ header{
 footer{
     text-align: center;
     padding: 15px 0;
-    background: #f3f3f3;
-    color: ;
+    background: #f3f4f6;
+    color: #374151;
 }
-       }
